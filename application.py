@@ -10,6 +10,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from markupsafe import escape
 
+
+def create_app(test_config=None):
 app = Flask(__name__)
 
 # set secret key
