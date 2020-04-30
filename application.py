@@ -12,7 +12,7 @@ from markupsafe import escape
 
 
 def create_app(test_config=None):
-app = Flask(__name__)
+    app = Flask(__name__)
 
 # set secret key
 app.secret_key = os.urandom(50)
